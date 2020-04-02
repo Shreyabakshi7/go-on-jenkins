@@ -7,7 +7,7 @@ pipeline {
         go 'go-1.14'
     }
     stages {
-        stage {
+        stage('Build Stage') {
             steps {
                 sh 'go build'
             }
