@@ -1,14 +1,14 @@
-pipeline{
+pipeline {
     agent any
-    environment{
+    environment {
         GO11MODULES = 'on'
     }
-    tools{
+    tools {
         go 'go-1.12'
     }
-    stages{
-        stage{
-            steps{
+    stages {
+        stage {
+            steps {
                 sh 'go build'
             }
         }
